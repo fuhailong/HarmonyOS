@@ -35,5 +35,6 @@ Cannot preview this file. Previews are available for files in .ets, .js, .css, .
 `@Link` 与 `@State`组合使用，父组件`@State`和子组件`@Link`单向绑定，父组件修改会影响子组件，子组件修改不会影响父组件
 
 ### (三) ArkUI 常用的控件
+[常用的控件_传送门](https://github.com/fuhailong/HarmonyOS/tree/master/entry/src/main/ets/ArkUI)
 
 
