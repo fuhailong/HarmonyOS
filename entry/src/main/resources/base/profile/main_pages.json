@@ -1,5 +1,14 @@
 {
   "src": [
-    "pages/Index"
+    "pages/Index",
+    "arkUI/ButtonTest",
+    "arkUI/CustomDialogTest",
+    "arkUI/MenuTest",
+    "arkUI/PopupTest",
+    "arkUI/ProgressTest",
+    "arkUI/RadioTest",
+    "arkUI/TextInputTextAreaTest",
+    "arkUI/TextTest",
+    "arkUI/ToggleTest"
   ]
 }

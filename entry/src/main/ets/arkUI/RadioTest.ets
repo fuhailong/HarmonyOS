@@ -1,3 +1,4 @@
+import router from '@ohos.router'
 @Entry
 @Component
 struct RadioTest {
@@ -24,6 +25,10 @@ struct RadioTest {
             }
           })
       }
+      Button('点击返回')
+        .onClick(() => {
+          router.back()
+        })
     }
     .width('100%')
   }

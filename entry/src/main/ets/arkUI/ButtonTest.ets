@@ -1,3 +1,4 @@
+import router from '@ohos.router'
 @Entry
 @Component
 struct ButtonTest {
@@ -26,6 +27,10 @@ struct ButtonTest {
       .onClick(() => {
         console.log('按钮被点击了')
       })
+      Button('点击返回')
+        .onClick(() => {
+          router.back()
+        })
     }
     .width('100%')
   }

@@ -1,9 +1,15 @@
+import router from '@ohos.router'
+import { ArkUIListModel } from '../model/ArkUIListModel'
+import promptAction from '@ohos.promptAction'
+
 @Entry
 @Component
 struct Texttest {
+  private params: ArkUIListModel = router.getParams()['key']
+
   build() {
     Column({ space: 10 }) {
-      Text('我是一个文本')
+      Text(`我是一个文本, 接受过来的参数标题为 ${this.params.title}`)
       // 带子组件的文本 Span只能是Text的子组件显示内容
       // Span组件需要写到Text组件内，单独写Span组件不会显示信息，Text与Span同时配置文本内容内容时，Span内容覆盖Text内容。
       Text('123') {
@@ -108,6 +114,47 @@ struct Texttest {
        * 通过textCase属性设置文本大小写
        * Text组件可以添加通用事件，可以绑定onClick、onTouch等事件来响应操作
        * */
+      Button('点击返回')
+        .onClick(() => {
+          // 返回前可以添加一个询问弹窗，例如未支付完成，返回时弹窗
+          /*
+          try {
+            router.showAlertBeforeBackPage({
+              message: '您还没有完成支付，确定要返回吗？'
+            })
+          } catch (err) {
+            console.error(`Invoke showAlertBeforeBackPage failed, code is ${err.code}, message is ${err.message}`)
+          }
+
+          router.back()
+          */
+
+          // 弹出自定义询问框
+          promptAction.showDialog({
+            message: '您还没有完成支付，确定要返回吗？',
+            buttons: [
+              {
+                text: '取消',
+                color: '#ff0000'
+              },
+              {
+                text: '确认',
+                color: '#0099ff'
+              }
+            ]
+          }).then((result) => {
+            if (result.index === 0) {
+              // 用户点击了取消按钮
+              console.log('点击了取消')
+            } else if (result.index === 1) {
+              // 用户点击了确认按钮
+              console.log('点击了确认')
+              router.back()
+            }
+          }).catch((err) => {
+            console.error(`Invoke showDialog failed, code is ${err.code}, message is ${err.message}`);
+          })
+        })
     }
     .width('100%')
   }
