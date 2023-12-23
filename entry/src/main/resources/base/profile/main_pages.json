@@ -9,6 +9,13 @@
     "arkUI/RadioTest",
     "arkUI/TextInputTextAreaTest",
     "arkUI/TextTest",
-    "arkUI/ToggleTest"
+    "arkUI/ToggleTest",
+    "arkUI/NavigationTest",
+    "arkUI/TabTest",
+    "arkUI/ImageTest",
+    "arkUI/ShapeTest",
+    "arkUI/CanvasTest",
+    "arkUI/AnimateTest",
+    "arkUI/TransitionTest"
   ]
 }

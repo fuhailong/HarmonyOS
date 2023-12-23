@@ -45,7 +45,42 @@ let arkListUIModels: Array<ArkUIListModel> = [
     id: 9,
     title: 'Menu',
     subTitle: '菜单'
-  }
+  },
+  {
+    id: 10,
+    title: 'Navigation',
+    subTitle: '标题栏'
+  },
+  {
+    id: 11,
+    title: 'Tab',
+    subTitle: '导航栏'
+  },
+  {
+    id: 12,
+    title: 'Image',
+    subTitle: '显示图片'
+  },
+  {
+    id: 13,
+    title: 'Shape',
+    subTitle: '绘制几何图形'
+  },
+  {
+    id: 14,
+    title: 'Canvas',
+    subTitle: '画布'
+  },
+  {
+    id: 15,
+    title: 'Animate',
+    subTitle: '布局动画'
+  },
+  {
+    id: 16,
+    title: 'Transition',
+    subTitle: '组件内转场动画'
+  },
 ]
 
 export function getModels(): Array<ArkUIListModel> {

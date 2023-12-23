@@ -36,6 +36,6 @@ Cannot preview this file. Previews are available for files in .ets, .js, .css, .
 
 `@Builder` 构造器，部分UI在自定义时候需要传入一个builder构造器，需要用此装饰器来创建一个
 ### (三) ArkUI 常用的控件
-[常用的控件_传送门](https://github.com/fuhailong/HarmonyOS/tree/master/entry/src/main/ets/ArkUI)
+[常用的控件_传送门](https://github.com/fuhailong/HarmonyOS/tree/master/entry/src/main/ets/arkUI)
 
 
