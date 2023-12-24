@@ -81,6 +81,26 @@ let arkListUIModels: Array<ArkUIListModel> = [
     title: 'Transition',
     subTitle: '组件内转场动画'
   },
+  {
+    id: 17,
+    title: 'SpringAnimate',
+    subTitle: '弹簧曲线动画'
+  },
+  {
+    id: 18,
+    title: 'SharedTransition',
+    subTitle: '共享元素转场'
+  },
+  {
+    id: 19,
+    title: 'Gesture',
+    subTitle: '手势'
+  },
+  {
+    id: 20,
+    title: 'Web',
+    subTitle: '网页'
+  },
 ]
 
 export function getModels(): Array<ArkUIListModel> {

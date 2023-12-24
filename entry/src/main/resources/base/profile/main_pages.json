@@ -16,6 +16,11 @@
     "arkUI/ShapeTest",
     "arkUI/CanvasTest",
     "arkUI/AnimateTest",
-    "arkUI/TransitionTest"
+    "arkUI/TransitionTest",
+    "arkUI/SpringAnimateTest",
+    "arkUI/SharedTransitionTest",
+    "arkUI/SharedTransitionTest1",
+    "arkUI/GestureTest",
+    "arkUI/WebTest"
   ]
 }
